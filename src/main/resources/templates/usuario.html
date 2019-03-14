@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Email</th>
+        </tr>
+        <tr th:each="usuario: ${usuario}">
+            <td th:text="$usuario.nome"></td>
+            <td th:text="$usuario.cpf"></td>
+            <td th:text="$usuario.email"></td>
+        </tr>
+    </table>
+</div>
+</div>
+</body>
+</html>
